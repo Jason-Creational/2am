@@ -9,7 +9,7 @@
     <script>
         async function writeWithDelay() {
             for (let i = 0; i < 10000; i++) {
-                document.write("2am is very cuties and pretty<br>");
+                document.write("2am is very cuties and pretty " + i + "<br>");
                 await new Promise(resolve => setTimeout(resolve, 1));
             }
         }
