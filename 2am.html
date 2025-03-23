@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2am</title>
+</head>
+<body>
+    <script>
+        async function writeWithDelay() {
+            for (let i = 0; i < 10000; i++) {
+                document.write("2am is very cuties and pretty<br>");
+                await new Promise(resolve => setTimeout(resolve, 1));
+            }
+        }
+        writeWithDelay();
+    </script>
+</body>
+</html>
